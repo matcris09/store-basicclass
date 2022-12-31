@@ -30,14 +30,11 @@ html {
 /*Globales o Generales del diseño del "body, parrafos, h, contenedores" segun se desee*/
 
 /* 1-body */
-
 body{background-color:var(--negro-claro);
     font-size: 1.6rem;
     line-height:1.5;}
 
-
 /*2-fuente general para los parrafos*/
-
 p{
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,7 +42,6 @@ p{
 }
 
 /*3-fuente general para los enlaces*/
-
 a{
     text-decoration: none;
 }
@@ -55,9 +51,7 @@ a{
     margin:0 auto
 }
 
-
 /*4-generales para los headings*/
-
 h1,h2,h3,h4{
     text-align: center;
     font-family:var(--fuente_Principal);
@@ -74,5 +68,10 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+
+
+/* 6-alineado vertical y horizontal*/
+
+
 
 
