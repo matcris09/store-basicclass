@@ -1,0 +1,78 @@
+:root{
+    --Orange:#E67E22;
+    --white:#FFF;
+    --negro:#0000;
+    --negro-claro:#5D6D7E;
+    --yellow:#F1C40F;
+    --gris:#839192;
+    --gris-claro: #D7DBDD;
+    --fuente_Principal: 'Staatliches', cursive; /*Son el Font Family*/
+    } /*Variables para ir trabajando*/
+
+
+
+
+/* IMPORTANTE, Esto nunca puede faltar en un proyecto*/
+
+html {
+    font-size: 62.5%;   /*Esto es para lograr que 1ren sea igual a 10px*/
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+
+/*Globales o Generales del diseño del "body, parrafos, h, contenedores" segun se desee*/
+
+/* 1-body */
+
+body{background-color:var(--negro-claro);
+    font-size: 1.6rem;
+    line-height:1.5;}
+
+
+/*2-fuente general para los parrafos*/
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+/*3-fuente general para los enlaces*/
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto
+}
+
+
+/*4-generales para los headings*/
+
+h1,h2,h3,h4{
+    text-align: center;
+    font-family:var(--fuente_Principal);
+
+}
+
+/* 5-Tamaños de los headings*/
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+
