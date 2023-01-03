@@ -2,10 +2,12 @@
     --Orange:#E67E22;
     --white:#FFF;
     --negro:#0000;
-    --negro-claro:#5D6D7E;
+    --negro-claro:#34495E;
+    --negro:#17202A;
     --yellow:#F1C40F;
-    --gris:#839192;
+    --gris:#424949;
     --gris-claro: #D7DBDD;
+    --azul-oscuro:#2874A6;
     --fuente_Principal: 'Staatliches', cursive; /*Son el Font Family*/
     } /*Variables para ir trabajando*/
 
@@ -30,9 +32,10 @@ html {
 /*Globales o Generales del diseño del "body, parrafos, h, contenedores" segun se desee*/
 
 /* 1-body */
-body{background-color:var(--negro-claro);
+body{background-color:var(--gris-claro);
     font-size: 1.6rem;
-    line-height:1.5;}
+    line-height:1.5;
+}
 
 /*2-fuente general para los parrafos*/
 p{
@@ -48,7 +51,7 @@ a{
 
 .contenedor{
     max-width: 120rem;
-    margin:0 auto
+    margin:0 auto;
 }
 
 /*4-generales para los headings*/
@@ -82,6 +85,115 @@ h3 {
 
 /*Empezamos Proyecto*/
 
-.navegacion-principal{
-    background-color: #F1C40F;
+/*Primera Parte-heater*/
+
+.header{
+    display: flex;
+    justify-content: center;
 }
+
+.header__logo{
+margin:3rem 0;
+
+}
+
+/* Segunda Parte-Navegacion*/
+
+.fondo{
+    background-color:#2874A6;
+}
+
+.contenedor_2{
+
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+
+.navegacion{
+background-color: var(--azul-oscuro);
+padding: 1rem 0;
+display: flex;
+justify-content:space-evenly;
+
+}
+
+
+.navegacion__enlace{
+    font-family: var(--fuente_Principal);
+    font-size: 3rem;
+}
+
+.navegacion__enlace--resaltador,
+.navegacion__enlace.hover{
+   color: var(--Orange);
+}
+
+
+/* Tercera Parte-main*/
+
+.grid{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 1rem;
+}
+
+
+@media (min-width:768px ){
+.grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+.producto{
+background-color: #2874A6;
+padding: 2rem;
+
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__informacion{
+    text-align: Center;
+}
+
+.producto__nombre{
+    
+    font-size: 4rem;
+    
+    
+}
+
+.producto__precio{
+font-size: 2rem;
+color: var(--yellow);
+}
+
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuente_Principal);
+    line-height:1.2;
+    margin:0.5rem;
+}
+
+
+
+
+.footer{
+
+    background-color:var(--negro-claro);
+    padding:1rem;
+    margin-top: 2rem;    
+}
+
+
+.footer__text{
+font-family:var(--fuente_Principal);
+font-size:2.2rem;
+text-align: center;
+
+}
+
+
