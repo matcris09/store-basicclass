@@ -253,6 +253,8 @@ h3 {
 .gridnosotros {
     display: grid;
     grid-template-rows: (2, 1fr);
+   
+    
 }
 
 
@@ -261,11 +263,23 @@ h3 {
     .gridnosotros {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
     }
 
 }
 
 .gridnosotros_img {
-
     width: 100%;
 }
+
+.gridnosotros_contenido{
+text-align:justify;
+
+}
+
+.gridnosotros_img{
+padding-top: 2rem;
+grid-row: 2/1;
+
+}
+
