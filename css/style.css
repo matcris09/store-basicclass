@@ -39,7 +39,7 @@ body{background-color:var(--gris-claro);
 p{
     font-size: 1.8rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--white);
+    color: var(--negro);
 }
 
 /*3-fuente general para los enlaces*/
@@ -223,3 +223,11 @@ text-align: center;
 }
 
 
+
+/* Pagina Nosotros*/
+
+.gridnosotros{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    
+}
