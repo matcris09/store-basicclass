@@ -57,6 +57,7 @@ a {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
+   
 
 }
 
@@ -243,6 +244,7 @@ h3 {
     font-family: var(--fuente_Principal);
     font-size: 2.2rem;
     text-align: center;
+    color: var(--white);
 
 }
 
@@ -252,9 +254,7 @@ h3 {
 
 .gridnosotros {
     display: grid;
-    grid-template-rows: (2, 1fr);
-   
-    
+    grid-template-rows: repeat(2, auto);
 }
 
 
@@ -269,17 +269,28 @@ h3 {
 }
 
 .gridnosotros_img {
+    grid-row: 1/2;
     width: 100%;
 }
 
-.gridnosotros_contenido{
-text-align:justify;
+.gridnosotros_contenido {
+    text-align: justify;
 
 }
 
-.gridnosotros_img{
-padding-top: 2rem;
-grid-row: 2/1;
+@media (min-width: 768px) {
+    .gridnosotros_img {
+        width: 100%;
+        padding-top: 2rem;
+        grid-column: 2/3;
 
-}
 
+    }
+
+    /*Parte- Porquenosotros*/
+    
+    }
+
+
+
+    
