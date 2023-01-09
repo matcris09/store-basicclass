@@ -57,7 +57,9 @@ a {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-   
+
+
+
 
 }
 
@@ -288,9 +290,15 @@ h3 {
     }
 
     /*Parte- Porquenosotros*/
-    
+
+    .porquenosotros_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    @media (min-width: 768px) {
+        .porquenosotros_grid {
+            grid-template-columns: repeat(4, 1fr);
+        }
 
-
-    
+    }
