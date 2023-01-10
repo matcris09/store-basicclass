@@ -37,7 +37,7 @@ html {
 
 /* 1-body */
 body {
-    background-color: var(--gris-claro);
+    background-color:#85929E;
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -57,10 +57,6 @@ a {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-
-
-
-
 }
 
 /*4-generales para los headings*/
@@ -95,6 +91,11 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
+/* 7- display block activado para imagenes*/
+
+img{display: block;}
+
 
 
 /*Empezamos Proyecto*/
@@ -285,20 +286,35 @@ h3 {
         width: 100%;
         padding-top: 2rem;
         grid-column: 2/3;
-
-
     }
+}
 
-    /*Parte- Porquenosotros*/
+/*Parte- Porquenosotros*/
 
+.porquenosotros_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+   
+}
+
+@media (min-width: 768px) {
     .porquenosotros_grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+       
     }
+}
 
-    @media (min-width: 768px) {
-        .porquenosotros_grid {
-            grid-template-columns: repeat(4, 1fr);
-        }
+.porquenosotros_icono{
+    margin: 0 auto;
+}
 
-    }
+.porquenosotros_titulo{
+    margin: 0%;
+}
+
+.porquenosotros__descripcion{
+  
+    text-align: justify;
+}
+
